@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sleep Calculator</title>
+  <style>
+    body {
+  font-family: Arial, sans-serif;
+}
+
+h1 {
+  text-align: center;
+}
+
+label {
+  display: inline-block;
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+input[type="time"] {
+  width: 150px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px 108px;
+  background-color: #4CAF50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+button:hover {
+  background-color: #3e8e41;
+}
+
+  </style>
+</head>
+<body>
+  <h1>Sleep Calculator</h1>
+  
+  <label for="bedtime">Bedtime:</label>
+  <input type="time" id="bedtime">
+  <br>
+  <label for="wakeup">Wake-up time:</label>
+  <input type="time" id="wakeup">
+  <br>
+  <button onclick="calculate()">Calculate</button>
+  <p id="result"></p>
+  
+  <script src="script.js"></script>
+</body>
+</html>
